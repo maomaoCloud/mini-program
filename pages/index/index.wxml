@@ -1,0 +1,6 @@
+<view class='content'>
+  <view>province:{{ province }}</view>
+  <view>city: {{ city }}</view>
+  <view>district:{{ district }}</view>
+  <view>address:{{ address }}</view>
+</view>

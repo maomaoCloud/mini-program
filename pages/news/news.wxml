@@ -1,0 +1,42 @@
+<view class='news-list'>
+
+  <view class='news-item' wx:for="{{ newsData }}" wx:key="id">
+    <view class='date-box'>
+      <image class='icon' src='/resource/clock.png'></image>
+      <text class='date'>{{ item.date }}</text>
+    </view>
+    <navigator url='/pages/newsdetail/newsdetail?id={{ item.id }}'>
+      <text class='title'>{{ item.title }}</text>
+    </navigator>
+
+    <navigator url='/pages/newsdetail/newsdetail?id={{ item.id }}'>
+      <image class='img' src='{{ item.img }}' lazy-load='{{ true }}' mode='widthFix'></image>
+    </navigator>
+  </view>
+
+</view>
+
+<view wx:if="{{ hasMore }}" class='load'>
+  <view class="spinner">
+    <view class="spinner-container container1">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container2">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container3">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{ !hasMore }}" class='noMoreData'>没有更多数据了</view>
+<view class='space'></view>

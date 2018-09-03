@@ -1,0 +1,278 @@
+@import "../../wxSearchView/wxSearchView.wxss";
+
+.weui-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #bd2529;
+  border: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+}
+
+.weui-search-bar__form {
+  border-radius: 100rpx;
+  margin-right: 20rpx;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weui-icon-search_in-box {
+  position: relative;
+  left: -5rpx;
+  top: 0;
+}
+
+.search-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-holder .placeholder {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 2rpx;
+}
+
+.weui-search-bar__add-active-btn {
+  color: #fff;
+  font-size: 18px;
+}
+
+.padding-holder {
+  padding-top: 100rpx;
+}
+
+.padding-holder-20rpx{
+ padding-top: 70rpx;
+}
+
+.section-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9991;
+  background-color: #fff;
+  border-bottom: #e1e1e1;
+}
+
+.nav-item {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  color: #555;
+  font-size: 18px;
+  margin: 10rpx 0;
+}
+
+.section-nav .active {
+  color: #bd2529;
+  font-weight: bold;
+}
+
+.swiper {
+  width: 100%;
+  z-index: 10;
+}
+
+.swiper image {
+  width: 100%;
+}
+
+.game {
+  margin-bottom: 30rpx;
+}
+
+.game .title {
+  display: flex;
+  align-items: center;
+}
+
+.game .title image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-left: 10rpx;
+}
+
+.game .title text {
+  font-size: 18px;
+  color: #bd2529;
+  letter-spacing: 3rpx;
+  margin-left: 20rpx;
+  font-weight: bold;
+}
+
+.showmian {
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.w25 {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.scrool-left {
+  position: relative;
+  background: #fff;
+}
+
+.leftjiantou {
+  position: absolute;
+  top: 38%;
+  right: 1%;
+}
+
+.leftjiantou image {
+  width: 10px;
+}
+
+.lefts {
+  left: 1%;
+  top: 38%;
+}
+
+.w25 .game-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.w25 .game-item image {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.w25 .game-item text {
+  font-size: 13px;
+  letter-spacing: 2rpx;
+  margin-top: 5rpx;
+}
+
+.w25 .game-item .link {
+  font-size: 14px;
+  border: 2rpx solid #bd2529;
+  border-radius: 10rpx;
+  padding: 3rpx 10rpx;
+  margin-top: 10rpx;
+}
+
+.news-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60rpx;
+}
+
+.news-item .title {
+  width: 97%;
+  font-size: 18px;
+  text-align: left;
+  margin: 10rpx 0;
+}
+
+.news-item .img {
+  width: 97%;
+}
+
+.news-item .info {
+  width: 97%;
+  color: #aaa3a3;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+}
+
+.news-item .info .address-box .icon {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.news-item .info .address-box {
+  float: left;
+  display: flex;
+  justify-content: left;
+  width: 30%;
+  text-align: left;
+}
+
+.news-item .info .date {
+  width: 40%;
+  text-align: center;
+}
+
+.news-item .info .number {
+  text-align: right;
+  width: 30%;
+}
+
+.news-item .baoming-btn {
+  width: 50%;
+  height: 70rpx;
+  font-size: 18px;
+  background-color: #bd2529;
+  border-radius: 20rpx;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10rpx;
+}
+
+/*弹出层*/
+.addActive-layer{
+  padding-top:20rpx; 
+  width: 100%;
+  background-color: #FFF;
+  height: 800rpx;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addActive-layer .title{
+  font-size: 16px;
+  color: #bd2529;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  background-color: #EEE;
+  margin-top: -20rpx;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #CECECE;
+}
+
+.addActive-layer .addActive-btn{
+  background-color: #bd2529;
+  color: #FFF;
+  width: 90%;
+  margin-bottom: 15rpx;
+}
+.addActive-layer .op-box{
+  width: 100%;
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0rpx;
+  text-align: center;
+}
+
+.addActive-layer .layer-data{
+  padding-top: 70rpx;
+  height: 620rpx;
+  overflow: scroll;
+  width: 100%;
+}

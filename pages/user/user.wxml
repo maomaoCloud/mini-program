@@ -1,0 +1,89 @@
+<view class='top'>
+  <view class='user-header'>
+
+    <image src='{{ avatarUrl }}'></image>
+  </view>
+  <view class='user-info'>
+    <text class='name'>{{ nickName }}</text>
+  </view>
+</view>
+<image class='bg-bottom' mode='widthFix' src='/resource/user-bottom.png'></image>
+<view class='other'>
+  <view class='qrcode info-item'>
+  <image src='https://modao.cc/uploads3/images/2349/23496744/raw_1533283576.jpeg' lazy-load='{{ true }}'></image>
+  <text>参加活动\n请出示该二维码签到</text>
+  </view>
+
+  <view class='baseinfo info-item'>
+    <view class='phone'>
+      <image class='icon' src='/resource/phone.png'></image>
+      <text>18012673347</text>
+    </view>
+    <view class='address'>
+      <image class='icon' src='/resource/aui-icon-location.png'></image>
+      <text>江苏省苏州市高新区</text>
+    </view>
+  </view>
+</view>
+
+
+<view class='card line-bottom' hover-class='card-hover'>
+  <view class='main'>我的俱乐部</view>
+  <view class='sub'>进入管理</view>
+</view>
+
+<view hover-class='card-hover' class='card line-bottom'>
+  <view class='main'>我的报名</view>
+  <view class='sub'>全部报名</view>
+</view>
+<view class='data'>
+  <view class='data-item'>
+    <image class='icon' src='/resource/clock-big.png'></image>
+    <text class='title'>火热报名中</text>
+    <text class='count'>15</text>
+  </view>
+  <view class='data-item'>
+    <image class='icon' src='/resource/hour-glass.png'></image>
+    <text class='title'>进行中</text>
+    <text class='count'>23</text>
+  </view>
+  <view class='data-item'>
+    <image class='icon' src='/resource/message.png'></image>
+    <text class='title'>已结束</text>
+    <text class='count'>34</text>
+  </view>
+</view>
+<view class='divider-line'></view>
+
+<view hover-class='card-hover' class='card line-bottom'>
+  <view class='main'>我的发布</view>
+  <view class='sub'>全部发布</view>
+</view>
+<view class='data'>
+  <view class='data-item'>
+    <image class='icon' src='/resource/clock-big.png'></image>
+    <text class='title'>火热报名中</text>
+    <text class='count'>15</text>
+  </view>
+  <view class='data-item'>
+    <image class='icon' src='/resource/hour-glass.png'></image>
+    <text class='title'>进行中</text>
+    <text class='count'>23</text>
+  </view>
+  <view class='data-item'>
+    <image class='icon' src='/resource/message.png'></image>
+    <text class='title'>已结束</text>
+    <text class='count'>34</text>
+  </view>
+</view>
+<view class='divider-line'></view>
+
+<view hover-class='card-hover' class='card line-bottom'>
+  <view class='main'>报名信息</view>
+  <view class='sub'></view>
+</view>
+
+<view hover-class='card-hover' class='card'>
+  <view class='main'>历史获奖信息</view>
+  <view class='sub'></view>
+</view>

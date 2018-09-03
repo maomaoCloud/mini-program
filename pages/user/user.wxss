@@ -1,0 +1,197 @@
+page{
+ background-color: #efefef;
+}
+
+.top {
+  height: 300rpx;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAHVCAYAAAAwzZEEAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA4LzgvMTjoebKiAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAATlJREFUSIndlTGywzAIRHe58C9y5dxjU8hBEgLsmd+lyTiWgAUeGO/XnwwAfuZHAIzjiTBAMIyn0iI7JUza39H9iTCxUwDQZTyIhlzkUMDzVK3ZUD8yn3+xCyr0ZYGCWS4DR7TeaZ95Vs6rC4BBIcuyBvf+0iuE0T2PTosw8Nv9qUWq9NGjqQipymyJMe8tmcPJBkwMnot2Z7MQQQrACVf6ByqESYJx1nkOxKzV0oVNQc8VKs15Q7vuN4xrt824Lxha7hEwCnuqwLUt1NF+rKoS1ltia9qDPu7+vL+ZvpW1rhDLfATCfD4iJfIK+T5dxiXR9wCV63QqyPibiG49muyOpigbq6JRd6iUXorN9Z/vRwNrslDClXKzemeGIL/CZf+d3Eezfv+FA/FU7/oOkLr5eP4pKrYoAHwAUNeWf72MosUAAAAASUVORK5CYII=') no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-bottom {
+  width: 100%;
+  margin-bottom: -11rpx;
+}
+
+.top .user-header {
+  width: 179rpx;
+  height: 179rpx;
+  border-radius: 50%;
+  border: 15rpx solid rgba(200, 200, 200, 0.5);
+}
+
+.top .user-header image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  border: 15rpx solid rgba(221, 176, 194, 0.9);
+}
+
+.top .user-info {
+  margin-top: 15rpx;
+}
+
+.top .user-info .name {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 2rpx;
+}
+
+/*个人信息和二维码布局*/
+.other{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFF;
+  padding: 20rpx 10rpx;
+}
+
+.other .info-item{
+  width: 50%;
+}
+
+.other .baseinfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other .baseinfo .icon{
+  padding-right: 10rpx;
+}
+
+.other .baseinfo .phone ,.other .baseinfo .address{
+  display: flex;
+  padding: 15rpx 0;
+  align-items: center;
+}
+
+.other .qrcode::after{
+  content: "";
+  height: 150rpx;
+  width: 2rpx;
+  background: #efefef;
+  position: absolute;
+  right: 50%;
+}
+
+.other .baseinfo .phone .icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.other .baseinfo .phone text{
+  font-size: 14px;
+}
+
+.other .baseinfo .address .icon{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.other .baseinfo .address text{
+ font-size: 14px;
+}
+
+.other .qrcode{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.other .qrcode image{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.other .qrcode  text{
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+}
+
+/*列表菜单布局*/
+.card {
+  background-color: #FFF;
+  padding: 20rpx 15rpx;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card:last-child{
+  margin-bottom: 100rpx;
+}
+
+.card-hover{
+  background-color: #efefef;
+}
+
+.line-bottom {
+  border-bottom: 1rpx solid #efefef;
+}
+
+.card .main {
+  color: #101010;
+  font-size: 16px;
+}
+
+.card .sub {
+  font-size: 14px;
+  color: #ccc;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+.sub::after {
+  content: "";
+  clear: both;
+  width: 16rpx;
+  height: 16rpx;
+  border-right:2rpx solid #ccc;
+  border-top: 2rpx solid #ccc;
+  display: block;
+  margin-left: 5rpx;
+  margin-right: 20rpx;
+  transform: rotate(45deg);
+}
+
+/*三等分样式*/
+.data{
+  display: flex;
+  padding-top: 30rpx;
+  padding-bottom: 25rpx;
+  background-color: #FFF;
+}
+
+.data .data-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333%;
+}
+
+.data .data-item .icon{
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.data .data-item .title{
+  font-size: 14px;
+  color: #444;
+  padding: 10rpx 0;
+}
+
+.data .data-item .count{
+  font-size: 12px;
+  color: #444;
+  font-weight: bold;
+}

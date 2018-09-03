@@ -1,0 +1,118 @@
+<view class="weui-search-bar">
+  <navigator url='../search/search' class="weui-search-bar__form">
+    <view class="weui-search-bar__box">
+      <view class='search-holder'>
+        <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+        <text class='placeholder'>搜索感兴趣的赛事</text>
+      </view>
+    </view>
+  </navigator>
+  <view class="weui-search-bar__add-active-btn" bindtap="addActive">
+    <text data-key='add-active'>+创建活动</text>
+  </view>
+</view>
+<view class='padding-holder'></view>
+<view class="section section-nav">
+  <view bindtap='selectTab' data-index="0" class='nav-item {{ currentTab == 0 ? "active" : ""}}'>精选赛事</view>
+  <view bindtap='selectTab' data-index="1" class='nav-item {{ currentTab == 1 ? "active" : ""}}'>棋类赛事</view>
+  <view bindtap='selectTab' data-index="2" class='nav-item {{ currentTab == 2 ? "active" : ""}}'>牌类赛事</view>
+  <view bindtap='selectTab' data-index="3" class='nav-item {{ currentTab == 3 ? "active" : ""}}'>其他</view>
+</view>
+<view class='padding-holder-20rpx'></view>
+<view wx:if="{{ currentTab == 0 }}" class='swiper'>
+  <swiper indicator-dots="{{ true }}" autoplay="{{ true }}" indicator-active-color="#FFF" indicator-color="rgba(200,200,200,.5)" interval="3000" duration="500" circular="{{ true }}">
+    <swiper-item wx:for="{{ swiperData }}" wx:key="id">
+      <navigator url='{{ item.url }}'>
+        <image src="{{ item.img }}" class="slide-image" lazy-load="{{ true }}" mode="widthFix" />
+      </navigator>
+    </swiper-item>
+  </swiper>
+</view>
+
+<view class='game' wx:if="{{ currentTab == 0 }}">
+  <view class='title'>
+    <image src='/resource/gamepad.png'></image>
+    <text>精选在线游戏</text>
+  </view>
+  <view class="scrool-left">
+    <scroll-view scroll-x="true" style="white-space: nowrap; display: block" class="showmian">
+      <view bindtap="chooseItem" class="w25 hovertxt" wx:for="{{ gameData }}" wx:key="id" data-index="{{index}}">
+        <view class='game-item'>
+          <image src='{{ item.img }}' lazy-load='{{ true }}'></image>
+          <text>{{ item.name }}</text>
+          <navigator url="/pages/web/web?title={{ item.name }}&url={{ item.link }}" class='link'>
+            立即下载
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>
+
+<view class='news'>
+  <view class='news-item' wx:for="{{ matchData }}" wx:key="id">
+    <image class='img' mode='widthFix' src='{{ item.img }}' lazy-load='{{ true }}'></image>
+    <text class='title'>{{ item.title }}</text>
+    <view class='info'>
+      <view class='address-box'>
+        <image class='icon' src='/resource/location.png'></image>
+        <text class='address'>{{ item.address }}</text>
+      </view>
+      <view class='date'>{{ item.date }} 开始</view>
+      <view class='number'>{{ item.number }}人已报名</view>
+    </view>
+    <view class='baoming-btn'>{{ item.fee }}元立即报名</view>
+  </view>
+</view>
+
+<view class='load'>
+  <view class="spinner">
+    <view class="spinner-container container1">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container2">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container3">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+  </view>
+</view>
+<view class='space'></view>
+
+<!--创建活动弹出层-->
+<view wx:if="{{ addActive }}" animation='{{animationData}}' class='addActive-layer'>
+  <view class='title'>创建活动</view>
+  <view class='layer-data'>
+    <view class="section">
+      <view class="section__title">日期选择器</view>
+      <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          当前选择: {{date}}
+        </view>
+      </picker>
+    </view>
+
+    <view class="section">
+      <view class="section__title">省市区选择器</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          当前选择：{{region[0]}} - {{region[1]}} - {{region[2]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class='op-box'>
+    <button class='addActive-btn'>提交活动</button>
+  </view>
+</view>
+<view wx:if="{{ addActive }}" bindtap='hideMask' class='mask'></view>

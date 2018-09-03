@@ -1,0 +1,37 @@
+{
+  "pages":[
+    "pages/match/match",
+    "pages/news/news",
+    "pages/club/club",
+    "pages/user/user",
+    "pages/search/search",
+    "pages/searchClub/searchClub",
+    "pages/newsdetail/newsdetail",
+    "pages/web/web"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#BD2529",
+    "navigationBarTitleText": "竞技头条",
+    "navigationBarTextStyle":"light"
+  },"tabBar": {
+    "list": [
+      {
+        "iconPath":"resource/match.png",
+        "selectedIconPath": "resource/match-active.png",
+        "pagePath": "pages/match/match",
+        "text": "精选赛事"
+      },{
+        "iconPath": "resource/news.png",
+        "selectedIconPath": "resource/news-active.png",
+        "pagePath": "pages/news/news",
+        "text": "竞技新闻"
+      },{
+        "iconPath": "resource/user.png",
+        "selectedIconPath": "resource/user-active.png",
+        "pagePath": "pages/user/user",
+        "text": "个人中心"
+      }
+    ]
+  }
+}

@@ -1,0 +1,245 @@
+@import "../../wxSearchView/wxSearchView.wxss";
+
+.top .bottom-image {
+  width: 100%;
+  position: absolute;
+}
+
+.weui-search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color:#E0746D;
+  position: fixed;
+}
+
+.weui-search-bar__form {
+  border-radius: 100rpx;
+  margin-right: 20rpx;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weui-icon-search_in-box {
+  position: relative;
+  left: -5rpx;
+  top: 0;
+}
+
+.search-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-holder .placeholder {
+  color: #aaa;
+  font-size: 14px;
+  letter-spacing: 2rpx;
+}
+
+.weui-search-bar__add-active-btn {
+  color: #fff;
+  font-size: 18px;
+}
+
+.padding-holder {
+  padding-top: 96rpx;
+}
+
+/*俱乐部分类*/
+
+.club {
+  padding: 0 80rpx;
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAGLCAYAAAAGSfiDAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABR0RVh0Q3JlYXRpb24gVGltZQA4LzgvMTjoebKiAAAAHHRFWHRTb2Z0d2FyZQBBZG9iZSBGaXJld29ya3MgQ1M26LyyjAAAAStJREFUOI2dlUt2xSAMQyVv+A265e5DbwDYGExKOuFAMCBff4Lfn48MAOaBGjMBBhIGCQZmOx8IwBRLAib5rDCubmnvCjCAScbNoKG0EvROn78bdgBMBIwaJ5azXLSAfSZwXMrMNNtts3Aruyrs3yZ+nNXHLQRhajN3YeVSaSnC/Te/5nSzy4+3bx5fd6bzC2qhL/O7zog9LdryzM/prvwSq3C6JUM7ps4vhD/kAZ1fbCzp81ZfGYAp0v6uJ8PL/PPd4LcKOuZfzjXfuOI3jNf6LRIY09n/89sC4J4TuzPVssV3lNq5fkt+/mTufxs/wijBVPTnm/535pdrRrEscuMIu8J++f+IEw/9xXe9P9+0h2Mosr7o98jtf5H7it/cfNlrf4r+yYW5IPrwBUabpPtw5EvQAAAAAElFTkSuQmCC') no-repeat;
+  background-size: 100% 100%;
+}
+
+.showmian {
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 0px;
+}
+
+.w25 {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+}
+
+.scrool-left {
+  position: relative;
+}
+
+.leftjiantou {
+  position: absolute;
+  top: 38%;
+  right: 1%;
+}
+
+.leftjiantou image {
+  width: 10px;
+}
+
+.lefts {
+  left: 1%;
+  top: 38%;
+}
+
+.w25 .club-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.w25 .club-item image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 10rpx solid rgba(243, 204, 192, 0.3);
+}
+
+.w25 .club-item text {
+  font-size: 11px;
+  letter-spacing: 1rpx;
+  margin-top: 5rpx;
+  color: #fff;
+}
+
+/*俱乐部列表*/
+
+.club-list {
+  width: 100%;
+}
+
+.club-item:first-child .info{
+  border: none;
+}
+
+.club-item {
+  padding: 10rpx 20rpx;
+  position: relative;
+}
+
+.club-item .info {
+  display: flex;
+  flex-direction: row;
+  border-top: 2rpx solid #ccc;
+  padding-top: 50rpx;
+}
+
+.club-item .info .img {
+  width: 240rpx;
+  margin-right: 10rpx;
+}
+
+.club-item .info .detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.club-item .info .detail .line-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.club-item .info .detail  .mid-data {
+  margin: 10rpx 0;
+}
+
+.club-item .info .detail .name {
+  font-size: 14px;
+}
+
+.club-item .info .detail .address {
+  display: flex;
+  align-items: center;
+  float: right;
+  position: absolute;
+  right: 20rpx;
+}
+
+.club-item .info .detail .address .icon {
+  width: 25rpx;
+  height: 25rpx;
+}
+
+.club-item .info .detail .address .location {
+  font-size: 11px;
+  color: rgb(170, 163, 163);
+}
+
+.club-item .info .detail .star {
+  font-size: 14px;
+  color: orange;
+  letter-spacing: 5rpx;
+}
+
+.club-item .info .detail .active {
+  font-size: 11px;
+  color: rgb(173, 173, 173);
+  margin-left: 20rpx;
+}
+
+.club-item .info .detail .news-box {
+  font-size: 12px;
+  color: #fff;
+  background-color: rgb(148, 6, 148);
+}
+
+.club-item .info .detail .news-title {
+  font-size: 11px;
+  color: rgb(170, 163, 163);
+  margin-left: 10rpx;
+  width: 225rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.club-item .type {
+  position: absolute;
+  right: 20rpx;
+  font-size: 11px;
+  background-color: rgb(255, 210, 31);
+  padding: 5rpx 5rpx;
+  bottom: 220rpx;
+}
+
+.club-item .data{
+  display: flex;
+  margin-top: 30rpx;
+  padding-bottom: 25rpx;
+}
+
+.club-item .data .data-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33.3333%;
+}
+
+.club-item .data .data-item .icon{
+  width: 55rpx;
+  height: 55rpx;
+}
+
+.club-item .data .data-item .title{
+  font-size: 14px;
+  color: #444;
+  padding: 10rpx 0;
+}
+
+.club-item .data .data-item .count{
+  font-size: 12px;
+  color: #444;
+  font-weight: bold;
+}

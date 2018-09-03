@@ -1,0 +1,162 @@
+<view class='top'>
+  <view class="weui-search-bar">
+    <navigator url='../searchClub/searchClub' class="weui-search-bar__form">
+      <view class="weui-search-bar__box">
+        <view class='search-holder'>
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <text class='placeholder'>搜索感兴趣的俱乐部</text>
+        </view>
+      </view>
+    </navigator>
+    <view class="weui-search-bar__add-active-btn" bindtap="addActive">
+      <text data-key='add-active'>+创建俱乐部</text>
+    </view>
+  </view>
+
+<view class='padding-holder'></view>
+
+  <view class='club'>
+    <view class="scrool-left">
+      <scroll-view scroll-x="true" style="white-space: nowrap; display: block" class="showmian">
+        <view bindtap="chooseItem" class="w25 hovertxt" wx:for="{{ clubData }}" wx:key="id" data-index="{{index}}">
+          <view class='club-item'>
+            <view class='border'>
+              <image src='{{ item.img }}' lazy-load='{{ true }}'></image>
+            </view>
+            <text>{{ item.name }}</text>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+
+  <image class='bottom-image' mode="widthFix" src='/resource/bg-bottom.png'></image>
+</view>
+<view class='padding-holder'></view>
+
+<view class='club-list'>
+  
+
+  <view class='club-item'>
+    <view class='info'>
+      <image class='img' src='https://modao.cc/uploads3/images/2349/23495617/raw_1533282849.png' lazy-load="{{ true }}" mode="widthFix"></image>
+      <view class='detail'>
+        <view class='line-data'>
+          <text class='name'>虞山派掼蛋俱乐部</text>
+          <view class='address'>
+            <image class='icon' src='/resource/location.png'></image>
+            <text class='location'>江苏省苏州市高新区</text>
+          </view>
+        </view>
+
+        <view class='line-data mid-data'>
+          <view class='star s5'>★★★★★</view>
+          <text class='active'>已组织111场活动</text>
+        </view>
+
+        <view class='line-data'>
+          <text class='news-box'>最新消息</text>
+          <navigator class='news-title'>
+            8月30日玉兰杯周掼蛋男男女女
+          </navigator>
+        </view>
+
+      </view>
+    </view>
+    <text class='type'>特邀俱乐部</text>
+
+    <view class='data'>
+      <view class='data-item'>
+        <image class='icon' src='/resource/clock-big.png'></image>
+        <text class='title'>火热报名中</text>
+        <text class='count'>15</text>
+      </view>
+      <view class='data-item'>
+        <image class='icon' src='/resource/hour-glass.png'></image>
+        <text class='title'>进行中</text>
+        <text class='count'>23</text>
+      </view>
+      <view class='data-item'>
+        <image class='icon' src='/resource/message.png'></image>
+        <text class='title'>已结束</text>
+        <text class='count'>34</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class='club-item'>
+    <view class='info'>
+      <image class='img' src='https://modao.cc/uploads3/images/2349/23495617/raw_1533282849.png' lazy-load="{{ true }}" mode="widthFix"></image>
+      <view class='detail'>
+        <view class='line-data'>
+          <text class='name'>虞山派掼蛋俱乐部</text>
+          <view class='address'>
+            <image class='icon' src='/resource/location.png'></image>
+            <text class='location'>江苏省苏州市高新区</text>
+          </view>
+        </view>
+
+        <view class='line-data mid-data'>
+          <view class='star s1'>★★★★★</view>
+          <text class='active'>已组织111场活动</text>
+        </view>
+
+        <view class='line-data'>
+          <text class='news-box'>最新消息</text>
+          <navigator class='news-title'>
+            8月30日玉兰杯周掼蛋男男女女
+          </navigator>
+        </view>
+
+      </view>
+    </view>
+    <text class='type'>特邀俱乐部</text>
+
+    <view class='data'>
+      <view class='data-item'>
+        <image class='icon' src='/resource/clock-big.png'></image>
+        <text class='title'>火热报名中</text>
+        <text class='count'>15</text>
+      </view>
+      <view class='data-item'>
+        <image class='icon' src='/resource/hour-glass.png'></image>
+        <text class='title'>进行中</text>
+        <text class='count'>23</text>
+      </view>
+      <view class='data-item'>
+        <image class='icon' src='/resource/message.png'></image>
+        <text class='title'>已结束</text>
+        <text class='count'>34</text>
+      </view>
+    </view>
+  </view>
+
+  
+
+
+</view>
+
+<view class='load'>
+  <view class="spinner">
+    <view class="spinner-container container1">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container2">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+    <view class="spinner-container container3">
+      <view class="circle1"></view>
+      <view class="circle2"></view>
+      <view class="circle3"></view>
+      <view class="circle4"></view>
+    </view>
+  </view>
+</view>
+<view class='space'></view>
